@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetailsActivity" >
+
+    <TextView
+        android:id="@+id/bookDetailsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/book_details_header"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_details_titleValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bookDetailsHeader"
+        android:layout_below="@id/bookDetailsHeader"
+        android:layout_marginTop="40dp"
+        android:text="@string/value_not_found" />
+    
+ 
+    
+      <TextView
+        android:id="@+id/textView_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/textView_details_titleValue"
+        android:layout_marginLeft="22dp"
+        android:text="@string/title_prompt"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+      <TextView
+        android:id="@+id/textView_details_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_details_title"
+        android:layout_below="@id/textView_details_titleValue"
+        android:layout_marginTop="36dp"
+        android:text="@string/author_prompt"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+  	 <TextView
+        android:id="@+id/textView_details_authorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView_details_author"
+        android:layout_alignLeft="@id/textView_details_titleValue"
+        android:text="@string/value_not_found" />
+     <TextView
+        android:id="@+id/textView_details_pages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_details_author"
+        android:layout_below="@id/textView_details_author"
+        android:layout_marginTop="36dp"
+        android:text="@string/pages_prompt"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+          
+    <TextView
+        android:id="@+id/textView_details_pagesValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView_details_pages"
+        android:layout_alignLeft="@id/textView_details_authorValue"
+        android:text="@string/value_not_found" />
+
+    <Button
+        android:id="@+id/button_details_goBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_details_pages"
+        android:layout_below="@id/textView_details_pages"
+        android:layout_marginTop="40dp"
+        android:text="@string/go_back_button" />
+
+    <Button
+        android:id="@+id/button_details_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_details_goBack"
+        android:layout_alignBottom="@+id/button_details_goBack"
+        android:layout_centerHorizontal="true"
+        android:text="@string/delete_button" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LibraryApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="new_book">New book</string>
+    <string name="title_activity_add_new_book">AddNewBook</string>
+    <string name="new_book_header">New book</string>
+    <string name="title_prompt">Title: </string>
+    <string name="author_prompt">Author: </string>
+    <string name="pages_prompt">Pages: </string>
+    <string name="cancel_add_book">Cancel</string>
+    <string name="confirm_add_book">Confirm</string>
+    <string name="title_activity_book_details">BookDetailsActivity</string>
+    <string name="book_details_header">Book details</string>
+    <string name="value_not_found">Missing info</string>
+    <string name="go_back_button">Return</string>
+    <string name="delete_button">Delete</string>
+
+</resources>

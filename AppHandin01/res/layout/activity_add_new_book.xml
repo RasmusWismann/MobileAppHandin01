@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewBookActivity" >
+
+    <TextView
+        android:id="@+id/textView_newBookHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/new_book_header"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_newBookHeader"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@id/textView_newBookHeader"
+        android:text="@string/title_prompt" />
+	
+    <EditText
+        android:id="@+id/editText_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_title"
+        android:layout_below="@id/textView_title"
+        android:ems="10"
+        android:inputType="text" />
+    
+     <TextView
+        android:id="@+id/textView_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editText_title"
+        android:layout_below="@id/editText_title"
+        android:layout_marginTop="16dp"
+        android:text="@string/author_prompt" />
+     
+    <EditText
+        android:id="@+id/editText_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_author"
+        android:layout_alignTop="@id/textView_author"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView_pages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editText_author"
+        android:layout_below="@id/editText_author"
+        android:layout_marginTop="16dp"
+        android:text="@string/pages_prompt" />
+
+    <EditText
+        android:id="@+id/editText_pages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_pages"
+        android:layout_below="@id/textView_pages"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_cancelNewBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editText_pages"
+        android:layout_below="@id/editText_pages"
+        android:layout_marginTop="16dp"
+        android:text="@string/cancel_add_book" />
+
+    <Button
+        android:id="@+id/button_addNewBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/button_cancelNewBook"
+        android:layout_alignBottom="@id/button_cancelNewBook"
+        android:layout_alignRight="@id/editText_pages"
+        android:text="@string/confirm_add_book" />
+
+</RelativeLayout>
